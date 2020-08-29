@@ -32,7 +32,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -53,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598705485171</updated>
-      <workItem from="1598705486420" duration="3644000" />
+      <workItem from="1598705486420" duration="6589000" />
     </task>
     <servers />
   </component>
@@ -73,14 +74,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598707744565" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1598708194398">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1598710611961">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598708194398" />
-    <state x="681" y="266" width="540" height="524" key="StructurePopup" timestamp="1598709256478">
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598710611961" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1598710878667">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598709256478" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598710878667" />
     <state x="667" y="124" width="585" height="801" key="find.popup" timestamp="1598710446204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

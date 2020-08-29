@@ -13,33 +13,36 @@
                 <strong class="strong-text">NUTZEN SIE IHRE CHANCE!</strong>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                <div class="text label">Info</div>
-                <ul>
-                    <li><a href="" class="text">Kontakt </a></li>
-                    <li><a href="" class="text">Impressum</a></li>
-                    <li><a href="" class="text">Datenschutz</a></li>
-                    <li><a href="" class="text">AGB</a></li>
-                </ul>
+                <?php dynamic_sidebar( 'footer_area_one' ); ?>
+<!--                <div class="text label">Info</div>-->
+<!--                <ul>-->
+<!--                    <li><a href="" class="text">Kontakt </a></li>-->
+<!--                    <li><a href="" class="text">Impressum</a></li>-->
+<!--                    <li><a href="" class="text">Datenschutz</a></li>-->
+<!--                    <li><a href="" class="text">AGB</a></li>-->
+<!--                </ul>-->
             </div>
             <div class="col-lg-4 col-md-5 col-sm-6 col-12">
-                <div class="text label">WEITERBILDUNGSPROGRAMME</div>
-                <ul>
-                    <li><a href="" class="text">Vertriebsleiterausbildung (IHK) </a></li>
-                    <li><a href="" class="text">Geprüfter Vertriebsleiter (CEA)</a></li>
-                    <li><a href="" class="text">Trainer für betriebliche Weiterbildung (IHK)</a></li>
-                    <li><a href="" class="text">Management- und Führungstrainer (IHK)</a></li>
-                </ul>
+                <?php dynamic_sidebar( 'footer_area_two' ); ?>
+<!--                <div class="text label">WEITERBILDUNGSPROGRAMME</div>-->
+<!--                <ul>-->
+<!--                    <li><a href="" class="text">Vertriebsleiterausbildung (IHK) </a></li>-->
+<!--                    <li><a href="" class="text">Geprüfter Vertriebsleiter (CEA)</a></li>-->
+<!--                    <li><a href="" class="text">Trainer für betriebliche Weiterbildung (IHK)</a></li>-->
+<!--                    <li><a href="" class="text">Management- und Führungstrainer (IHK)</a></li>-->
+<!--                </ul>-->
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <div class="text label">KONTAKT</div>
-                <ul>
-                    <li><a href="" class="text">DVKS Deutsche Verkäuferschule® </a></li>
-                    <li><a href="" class="text">Mehrhooger Straße 1c</a></li>
-                    <li><a href="" class="text">D-46499 Hamminkeln</a></li>
-                    <li><a href="tel:4961044099846" class="text">Fon: +49 6104 4099846</a></li>
-                    <li><a href="mailto:willkommen@verkaeuferschule.de" class="text">willkommen@verkaeuferschule.de</a>
-                    </li>
-                </ul>
+                <?php dynamic_sidebar( 'footer_area_three' ); ?>
+<!--                <div class="text label">KONTAKT</div>-->
+<!--                <ul>-->
+<!--                    <li><a href="" class="text">DVKS Deutsche Verkäuferschule® </a></li>-->
+<!--                    <li><a href="" class="text">Mehrhooger Straße 1c</a></li>-->
+<!--                    <li><a href="" class="text">D-46499 Hamminkeln</a></li>-->
+<!--                    <li><a href="tel:4961044099846" class="text">Fon: +49 6104 4099846</a></li>-->
+<!--                    <li><a href="mailto:willkommen@verkaeuferschule.de" class="text">willkommen@verkaeuferschule.de</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
             </div>
             <div class="col-12">
                 <div class="rights">
