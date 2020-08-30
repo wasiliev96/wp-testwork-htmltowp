@@ -176,101 +176,44 @@
                     <p class="text center subtitle wow slideInUp" data-wow-duration="1s" data-wow-delay="0s">
                         Trainings & Seminare
                     </p>
+
                     <div class="events_slider wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                        <div class="event_item">
-                            <div class="event_item-wrapper">
-                                <strong class="event_item-category">Seminare</strong>
-                                <p class="event_item-title">Lorem ipsum dolor sit amet</p>
-                                <p class="event_item-description">
-                                    Aenean scelerisque urna at elementum iaculis. Fusce nibh nisi, hendrerit eu lorem
-                                    eget, placerat iaculis dolor.
-                                </p>
+						<?php
+						if ( get_query_var( 'paged' ) ) {
+							$paged = get_query_var( 'paged' );
+						}
+						if ( get_query_var( 'page' ) ) {
+							$paged = get_query_var( 'page' );
+						}
 
-                                <div class="event_item-event-data">
-                                    <div class="icon-wrap">
-                                        <span class="icon-calendar"></span>
+						$query = new WP_Query( array( 'post_type' => 'seminare', 'paged' => $paged ) );
+
+						if ( $query->have_posts() ) : ?>
+							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                                <div class="event_item">
+                                    <div class="event_item-wrapper">
+                                        <strong class="event_item-category">Seminare</strong>
+                                        <p class="event_item-title"><?php the_title() ?></p>
+                                        <p class="event_item-description">
+											<?php the_content() ?>
+                                        </p>
+                                        <div class="event_item-event-data">
+                                            <div class="icon-wrap">
+                                                <span class="icon-calendar"></span>
+                                            </div>
+                                            <span class="text"> <?php the_date()?></span>
+                                        </div>
+
                                     </div>
-                                    <span class="text">01.12.2019</span>
+                                    <a href="" class="btn active">Weiterlesen</a>
                                 </div>
-
-                            </div>
-                            <a href="" class="btn active">Weiterlesen</a>
-                        </div>
-                        <div class="event_item">
-                            <div class="event_item-wrapper">
-                                <strong class="event_item-category">Seminare</strong>
-                                <p class="event_item-title">Lorem ipsum dolor sit amet</p>
-                                <p class="event_item-description">
-                                    Aenean scelerisque urna at elementum iaculis. Fusce nibh nisi, hendrerit eu lorem
-                                    eget, placerat iaculis dolor.
-                                </p>
-
-                                <div class="event_item-event-data">
-                                    <div class="icon-wrap">
-                                        <span class="icon-calendar"></span>
-                                    </div>
-                                    <span class="text">01.12.2019</span>
-                                </div>
-
-                            </div>
-                            <a href="" class="btn active">Weiterlesen</a>
-                        </div>
-                        <div class="event_item">
-                            <div class="event_item-wrapper">
-                                <strong class="event_item-category">Seminare</strong>
-                                <p class="event_item-title">Lorem ipsum dolor sit amet</p>
-                                <p class="event_item-description">
-                                    Aenean scelerisque urna at elementum iaculis. Fusce nibh nisi, hendrerit eu lorem
-                                    eget, placerat iaculis dolor.
-                                </p>
-                                <div class="event_item-event-data">
-                                    <div class="icon-wrap">
-                                        <span class="icon-calendar"></span>
-                                    </div>
-                                    <span class="text">01.12.2019</span>
-                                </div>
-
-                            </div>
-                            <a href="" class="btn active">Weiterlesen</a>
-                        </div>
-                        <div class="event_item">
-                            <div class="event_item-wrapper">
-                                <strong class="event_item-category">Seminare</strong>
-                                <p class="event_item-title">Lorem ipsum dolor sit amet</p>
-                                <p class="event_item-description">
-                                    Aenean scelerisque urna at elementum iaculis. Fusce nibh nisi, hendrerit eu lorem
-                                    eget, placerat iaculis dolor.
-                                </p>
-
-                                <div class="event_item-event-data">
-                                    <div class="icon-wrap">
-                                        <span class="icon-calendar"></span>
-                                    </div>
-                                    <span class="text">01.12.2019</span>
-                                </div>
-
-                            </div>
-                            <a href="" class="btn active">Weiterlesen</a>
-                        </div>
-                        <div class="event_item">
-                            <div class="event_item-wrapper">
-                                <strong class="event_item-category">Seminare</strong>
-                                <p class="event_item-title">Lorem ipsum dolor sit amet</p>
-                                <p class="event_item-description">
-                                    Aenean scelerisque urna at elementum iaculis. Fusce nibh nisi, hendrerit eu lorem
-                                    eget, placerat iaculis dolor.
-                                </p>
-
-                                <div class="event_item-event-data">
-                                    <div class="icon-wrap">
-                                        <span class="icon-calendar"></span>
-                                    </div>
-                                    <span class="text">01.12.2019</span>
-                                </div>
-
-                            </div>
-                            <a href="" class="btn active">Weiterlesen</a>
-                        </div>
+							<?php endwhile;
+							wp_reset_postdata(); ?>
+                            <!-- show pagination here -->
+						<?php else : ?>
+                            <!-- show 404 error here -->
+						<?php endif; ?>
                     </div>
                 </div>
             </div>

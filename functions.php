@@ -455,7 +455,7 @@ function html5_shortcode_demo_2( $atts, $content = null ) // Demo Heading H2 sho
 }
 
 /*Custom Post type start*/
-function custom_post_seminares() {
+function custom_post_seminare() {
 	$supports = array(
 		'title', // post title
 		'editor', // post content
@@ -484,10 +484,10 @@ function custom_post_seminares() {
 		'has_archive'  => true,
 		'hierarchical' => false,
 	);
-	register_post_type( 'seminares', $args );
+	register_post_type( 'seminare', $args );
 }
 
-add_action( 'init', 'custom_post_seminares' );
+add_action( 'init', 'custom_post_seminare' );
 /*Custom Post type end*/
 
 
