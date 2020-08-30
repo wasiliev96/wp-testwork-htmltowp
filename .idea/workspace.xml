@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="26f53a32-9f60-4731-a141-cd1b8dd91ba5" name="Default Changelist" comment="" />
+    <list default="true" id="26f53a32-9f60-4731-a141-cd1b8dd91ba5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +26,9 @@
   </component>
   <component name="DrupalConfiguration">
     <drupalPath />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JoomlaConfiguration">
     <joomlaConfigPath />
@@ -31,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -54,30 +71,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598705485171</updated>
-      <workItem from="1598705486420" duration="6589000" />
+      <workItem from="1598705486420" duration="9684000" />
+      <workItem from="1598787808390" duration="1413000" />
+      <workItem from="1598789585540" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="540" y="179" key="#CLI_Interpreters" timestamp="1598705540741">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="179" key="#CLI_Interpreters/0.0.1920.1050@0.0.1920.1050" timestamp="1598705540741" />
-    <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1598708190844">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598716566347">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1598708190844" />
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1598707744565">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598716566347" />
+    <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1598789603882">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598707744565" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1598710611961">
+    <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1598789603882" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1598788902502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598710611961" />
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598788902502" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1598714291967">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598714291967" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1598710878667">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -86,6 +121,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="124" width="585" height="801" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598710446204" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598714302772">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598714302772" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\laragon\www\wp-testwork</wordpressPath>
