@@ -146,7 +146,31 @@
                                 <a href="tel:4961044099846"><strong>+49 6104 4099846</strong></a>
                             </div>
                         </div>
-                        <form class="contact-form">
+                        <!--                        contact form handler-->
+						<?php
+						if ( isset( $_POST['submit'] ) ) {
+							//user posted variables
+							$name    = $_POST['name'];
+							$email   = $_POST['email'];
+							$phone   = $_POST['phone'];
+							$message = $_POST['message'];
+
+							//php mailer variables
+							$to      = get_option( 'admin_email' );
+							$subject = "Some text in subject...";
+							$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
+
+							//Here put your Validation and send mail
+							$sent = wp_mail( $to, $subject, strip_tags( $message ), $headers );
+							if ( $sent ) {
+								echo "mail sent";
+							}//message sent!
+							else {
+								echo "mail failed";
+							}//message wasn't sent
+						}
+						?>
+                        <form id='contactForm' class="contact-form" method="POST" action="">
                             <h3 class="section-title">Nutzen Sie Ihre Chance!</h3>
                             <p class="text">
                                 Wir helfen Ihnen gerne bei der Auswahl der für Sie passenden Weiterbildung.
@@ -158,7 +182,7 @@
                             <div class="form_field">
                                 <textarea name="message" placeholder="Ihre Nachricht"></textarea>
                             </div>
-                            <button class="btn active">Nachricht senden</button>
+                            <button class="btn active" type="submit">Nachricht senden</button>
                         </form>
                     </div>
 
@@ -176,7 +200,7 @@
                     <p class="text center subtitle wow slideInUp" data-wow-duration="1s" data-wow-delay="0s">
                         Trainings & Seminare
                     </p>
-
+                    <!--                        post slider loop-->
                     <div class="events_slider wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
 						<?php
 						if ( get_query_var( 'paged' ) ) {
@@ -202,7 +226,7 @@
                                             <div class="icon-wrap">
                                                 <span class="icon-calendar"></span>
                                             </div>
-                                            <span class="text"> <?php the_date()?></span>
+                                            <span class="text"> <?php the_date() ?></span>
                                         </div>
 
                                     </div>
@@ -210,15 +234,20 @@
                                 </div>
 							<?php endwhile;
 							wp_reset_postdata(); ?>
-                            <!-- show pagination here -->
-						<?php else : ?>
-                            <!-- show 404 error here -->
 						<?php endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (e) {
+                e.preventDefault();
+                window.location.href = "<?php get_site_url()?>";
+            });
+    </script>
 
 
 <?php get_footer() ?>

@@ -528,14 +528,11 @@ function register_widget_areas() {
 add_action( 'widgets_init', 'register_widget_areas' );
 ?>
 
-
+<!--theme options menu item register-->
 <?php
 add_action( 'admin_menu', function () {
 	add_menu_page( 'Custom theme options', 'Theme Options', 'manage_options', 'site-options', 'add_theme_options', '', 4 );
 } );
-
-// функция отвечает за вывод страницы настроек
-// подробнее смотрите API Настроек: http://wp-kama.ru/id_3773/api-optsiy-nastroek.html
 function add_theme_options() {
 	?>
     <div class="wrap">
@@ -546,16 +543,14 @@ function add_theme_options() {
 
 }
 
-// Добавим подменю в меню админ-панели "Инструменты" (tools):
 add_action( 'admin_menu', 'register_my_custom_submenu_page' );
 
-
+//submenu register
 function register_my_custom_submenu_page() {
 	add_submenu_page( 'site-options', 'Footer settings', 'Footer settings', 'manage_options', 'footer-settings', 'get_footer_settings' );
 }
 
 function get_footer_settings() {
-	// контент страницы;
 	?>
 
     <div class="wrap">
